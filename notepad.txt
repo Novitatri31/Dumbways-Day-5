@@ -1,0 +1,55 @@
+Day 5 Count post blog time
+tipe data :
+1. dataobject
+2. array
+3. date
+
+let blog =
+postedAt : new Date ()
+
+untuk merubah format data seperti yang diinginkan diperlukan :
+function get FullTime () // merubah waktu -> butuh waktu yang akan diubah
+function getFullTime bisa dilakukan pada global scope atau pada scope di renderblog
+
+untuk menamplkan date month year maka diperlukan dataobject
+const date = time.getDate ()
+const month = time.getMonth ()
+const year = time.getFullYear ()
+
+kemudian console.log semuanya
+
+return `${date} ${month} WIB`dll
+
+untuk menghitung seberapa lama blog di posting maka diperlukan function :
+function getDistanceTime(time) {
+mencari selisih waktu saat ini - waktu postingan = selisih waktu
+ex: 10.40 - 10.10 = 30 menit
+code :
+const distance = new Date() - new Date (time) namun belum sesuai dengan format yang diinginkan
+
+maka harus mencari convert to day
+const miliseconds = 1000
+const secondInMinute = 60
+const minuteInHour = 60
+const secondInHour =s secondInMinute * secondInHour
+const hourInDay = 23 (karena format jam 24jam dan indeks dimulai dari 9
+
+let dayDistance = distance / (miliseconds * secondInHour * hourInDay)
+if (dayDistance >= 1) {
+const time = Math.floor(pembulatan kebawah 4,3 jadi 4)/ceil (pembulatan keatas 4,5 jadi 5) (dayDistance) + `day ago` 
+console.log("time:" time);
+return time }
+else {
+let hourDistance = math.floor (distance /(miliseconds * secondinHour)
+	if (hourDistance > 0) {
+	return hourDistancce + `hour ago`}
+console log("hourDistance :* + hourDistance)}
+
+let dayDistance akan muncul ketika ada upload blog yang baru karena fitur otomatis belom di setting
+
+melakukan renderBlog tanpa harus addBlog 
+setInterval(function (){
+	render number
+}, 2000) digunakan untuk mengeksekusi code secara automatis 
+
+

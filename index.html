@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>
+        Day 4 Creating blog
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <!--Navbar start-->
+    <!--Left side-->
+    <nav>
+        <div class="left-side">
+            <a href="https://dumbways.id/"><img src="assets/logo.png" alt="Dumbways logo">
+            </a>
+
+            <ol>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">My Project</a>
+                </li>
+
+            </ol>
+        </div>
+        <div class="right-side">
+            <a href="index.html">Contact me</a>
+
+        </div>
+
+    </nav>
+
+
+    <!--Navbar end-->
+
+    <!--Content 1 Start-->
+    <div class="cover">
+        <div class="content">
+            <form onsubmit="addBlog(event)">
+                <h1>ADD MY PROJECT</h1>
+                <div>
+                    <label for="namaProject">Project Name</label>
+                    <input type="text" id="namaProject">
+                </div>
+                <div class="date3">
+                    <div class="date1">
+                        <label for="startDate">Start Date</label>
+                        <input type="Date" id="startDate" name="Date">
+                    </div>
+                    <div class="date2">
+                        <label for="endDate">End date</label>
+                        <input type="date" id="endDate" name="Date">
+                    </div>
+                </div>
+                <div>
+                    <label for="deskripsi">Description</label>
+                    <input type="textarea" id="deskripsi" name="textarea">
+                </div>
+                <div class="checkbox">
+                    <h2>Technologies</h2>
+                    <div class="checkbox1">
+                        <input type="checkbox" for="nodeJs" name="checkbox1" value="Node Js">
+                        <label for="checkbox" id="nodeJs">Node Js</label>
+                        <input type="checkbox" for="reactJs" name="checkbox2" value="React Js">
+                        <label for="checkbox" id="reactJs">React Js</label>
+
+                    </div>
+                    <div class="checkbox2">
+                        <input type="checkbox" for="nextJs" name="checkbox3" value="Next Js">
+                        <label for="checkbox" id="nextJs">Next Js</label>
+                        <input type="checkbox" for="typeScript" name="checkbox4" value="Type Script">
+                        <label for="checkbox" id="typeScript">Type Script</label>
+                    </div>
+                </div>
+                <div class="choose">
+                    <label for="gambar">Upload Image</label>
+                    <button type="button">
+                        <input type="file" id="gambar" placeholder="No file chosen">
+                        <i class="fa-solid fa-paperclip fa-2x"></i>
+                    </button>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--content 1 end-->
+    <h3>My Project</h3>
+    <!--Dinamic content would be here-->
+    <div class="container" id="contentBlog" >
+        <div class="card" >
+            <img src="assets/image/img1.jfif" alt="">
+            <div class="card-desk">
+                <h4>Dumbways Mobile App-2021</h4>
+                <h6>Time Signal</h6>
+                <h6>Duration</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error commodi iste, autem facere aut nam
+                    tempore, qui natus rem non tempora hic quia laboriosam quae.</p>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-google-play"></i>
+                <i class="fa-brands fa-android"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="footer">
+                <button class="submit">edit</button>
+                <button class="submit">delete</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="form.js"></script>
+    <!--Content End-->
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+/*dicopy dari google font*/@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{  /* *{ digunakan untuk melakukan setting pada semua code*/ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* download dari google.font*/
+}
+
+
+.container-form {
+    background-color: white;
+    height: 93vh; /* kenapa 93vh? karena untuk memberikan ruang pada navbar */
+    display: flex;
+    justify-content: center;/* untuk membuat content berada ditengah secara horizontal*/
+    align-items: center;/* untuk membuat content di tengah secara vertikal*/
+   
+}
+
+.container-form label{
+    font-size: 15px; /* ukuran text*/
+    font-weight: 300px; /* ketebalan teks*/
+    margin: 0;
+}
+.container-form input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px; /* untuk membuat jung square agar tidak lancip */
+
+}
+.container-form textarea {
+    resize : none; /*digunakan agar kolom tidak berubah ukuran */
+
+}
+.container-form button {
+    padding : 8px 12px;
+    background-color: #ec4d37;
+    color: white;
+    border: none;
+    font-size: 15px; /* untuk merubah ukuran text pada content */
+    border-radius: 8px;
+    cursor: pointer; /* untuk merubah pointer menjadi panah ketika diletakkan pada tombol button */
+}
+/* CONTACT FORM END */
+
+/* NAVBAR START*/
+
+img {
+    width: 40px;
+    height: 30px;
+}
+
+nav { 
+    display: flex;
+    height: 7vh;
+    background-color: silver;
+
+}
+
+nav div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+nav .left-side {
+    padding-left: 90px;
+}
+
+.left-side ol {
+    
+    list-style-type: none;
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.left-side ol li {
+    display: inline;
+    margin: 40px;
+}
+
+nav .left-side ol li a {
+    text-decoration: none;
+    color: black;
+}
+/*.right-side {
+    background-color: blue;
+    bagian dihapus, dilakukan pada awalan step karena untuk mempermudah pembagian flex
+}*/
+nav .right-side {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+nav .right-side a {
+    background-color: #ec4d37;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    
+    border-radius: 8px;
+}
+
